@@ -2,3 +2,63 @@ html {
   height: 100%;
   width: 100%;
 }
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 6px;
+}
+
+td.title {
+  color: red;
+}
+
+td.body {
+  color: green;
+  width: full;
+  height: 100vh;
+}
+
+#popup {
+  color: white;
+  background-color: cadetblue;
+}
+
+#popup {
+  color: white;
+  background-color: cadetblue;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+#popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#popupMove {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999;
+}
+
+li>img {
+  width: 100px;
+  height: 100px;
+}
